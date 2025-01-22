@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import data from "./assets/data/data.js";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  console.log(data);
 
   return (
     <>
+      <h2>Tout les évènements</h2>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <ul style={{ display: "flex", flexWrap: "wrap" }}>
+          {data.map((event) => {
+            return (
+              <li
+                style={{
+                  padding: "20px",
+                  border: "3px solid white",
+                  listStyle: "none",
+                  width: "40%",
+                  margin: "10px",
+                }}
+              >
+                <h5>Date : {event.date}</h5>
+                <h3>{event.title}</h3>
+                <h4>Organisateur : {event.organizer}</h4>
+                <p>{event.description}</p>
+                <p>Lieu : {event.location}</p>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
