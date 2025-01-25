@@ -1,7 +1,11 @@
 import React from "react";
 
 function HomeBO() {
-  return <div>HomeBO</div>;
+  return (
+    <section>
+     
+    </section>
+  );
 }
 
 export default HomeBO;

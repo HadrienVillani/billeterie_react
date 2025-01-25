@@ -1,7 +1,11 @@
 import React from "react";
 
 function AllProducts() {
-  return <div>Tout les produits</div>;
+  return (
+    <section>
+      <h2>Tout les produits</h2>
+    </section>
+  );
 }
 
 export default AllProducts;

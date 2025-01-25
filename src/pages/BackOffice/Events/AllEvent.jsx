@@ -2,9 +2,9 @@ import React from "react";
 
 function Allevent() {
   return (
-    <div>
+    <section>
       <h2>Tout les évènements</h2>
-    </div>
+    </section>
   );
 }
 
