@@ -7,11 +7,11 @@ function NavBackOffice() {
     subButtons: [
       {
         name: "Tout les évènements",
-        url: "allEvents",
+        url: "all-events",
       },
       {
         name: "Créer un évènement",
-        url: "createEvent",
+        url: "create-event",
       },
     ],
   };
@@ -20,11 +20,11 @@ function NavBackOffice() {
     subButtons: [
       {
         name: "Tout les produits",
-        url: "allProducts",
+        url: "all-products",
       },
       {
         name: "Créer un produit",
-        url: "createProduct",
+        url: "create-product",
       },
     ],
   };
@@ -33,11 +33,25 @@ function NavBackOffice() {
     subButtons: [
       {
         name: "Tout les utilisateurs",
-        url: "allUsers",
+        url: "all-users",
       },
       {
         name: "Créer un utilisateur",
-        url: "createUser",
+        url: "create-user",
+      },
+    ],
+  };
+
+  const article = {
+    title: "Les Articles",
+    subButtons: [
+      {
+        name: "Tout les articles",
+        url: "all-articles",
+      },
+      {
+        name: "Créer un article",
+        url: "create-article",
       },
     ],
   };
@@ -45,19 +59,19 @@ function NavBackOffice() {
   return (
     <>
       <nav
-        class="w-full flex flex-col justify-between border-r-2 border-white "
+        className="w-full flex flex-col justify-between border-r-2 border-white"
         style={{ width: "20%" }}
       >
-        <h2 className="p-5">La navBar de backOffice</h2>
         <ul className="flex flex-col">
-          <li className="flex items-center text-white p-5">
-            <NavLink to={"/backOffice"}>
-              <button className="button">BackOffice</button>
+          <li className="flex items-center text-white p-5 w-full">
+            <NavLink to={"/backOffice"} className="w-full">
+              <button className="button w-full">BackOffice</button>
             </NavLink>
           </li>
           <NavItem data={events} />
           <NavItem data={products} />
           <NavItem data={users} />
+          <NavItem data={article} />
         </ul>
       </nav>
     </>

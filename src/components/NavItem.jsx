@@ -46,7 +46,7 @@ function NavItem(props) {
   return (
     <div>
       <Stack direction="row" spacing={2} className="p-5">
-        <div>
+        <div className="w-full">
           <button
             ref={anchorRef}
             id="composition-button"
@@ -54,7 +54,7 @@ function NavItem(props) {
             aria-expanded={open ? "true" : undefined}
             aria-haspopup="true"
             onClick={handleToggle}
-            class="button"
+            className="button w-full"
           >
             {props.data.title}
           </button>
