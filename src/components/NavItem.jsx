@@ -18,7 +18,9 @@ function NavItem(props) {
           {props.data.subButtons.map((subButton, key) => {
             return (
               <NavLink key={key} to={`${subButton.url}`}>
-                <li className="p-5 hover:bg-neutral-600 ">{subButton.name}</li>
+                <li className="hover:bg-neutral-600">
+                  <button>{subButton.name}</button>
+                </li>
               </NavLink>
             );
           })}

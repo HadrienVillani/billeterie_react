@@ -10,10 +10,22 @@
 
 
 section {
+  padding: 3em;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: 2px solid white;
+  padding: 1em;
+}
+
+input {
+  height: 6vh;
 }
 
 .logo {

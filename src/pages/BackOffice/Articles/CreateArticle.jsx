@@ -1,14 +1,13 @@
 import React from "react";
 import BackOfficeForm from "../../../components/BackOfficeForm";
 import dataForm from "../../../assets/data/dataForm";
-
-function SendMessage() {
+function CreateArticle() {
   return (
     <section>
-      <h2>Envoyer un message</h2>
-      <BackOfficeForm data={dataForm.message} />
+      <h2>Créer un article</h2>
+      <BackOfficeForm data={dataForm.article} />
     </section>
   );
 }
 
-export default SendMessage;
+export default CreateArticle;

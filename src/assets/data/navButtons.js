@@ -1,7 +1,7 @@
 export default {
   navButtons: [
     {
-      title: "Les évènements",
+      title: "Évènements",
       subButtons: [
         {
           name: "Tout les évènements",
@@ -14,7 +14,7 @@ export default {
       ],
     },
     {
-      title: "Les produits",
+      title: "Produits",
       subButtons: [
         {
           name: "Tout les produits",
@@ -27,7 +27,7 @@ export default {
       ],
     },
     {
-      title: "Les Utilisateurs",
+      title: "Utilisateurs",
       subButtons: [
         {
           name: "Tout les utilisateurs",
@@ -40,7 +40,7 @@ export default {
       ],
     },
     {
-      title: "Les Articles",
+      title: "Articles",
       subButtons: [
         {
           name: "Tout les articles",
