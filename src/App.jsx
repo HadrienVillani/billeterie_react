@@ -16,6 +16,9 @@ import EditUser from "./pages/BackOffice/Users/EditUser";
 import EditArticle from "./pages/BackOffice/Article/EditArticle";
 import CreateArticle from "./pages/BackOffice/Article/CreateArticle";
 import AllArticles from "./pages/BackOffice/Article/AllArticles";
+import AllMessages from "./pages/BackOffice/Messages/AllMessages";
+import SendMessage from "./pages/BackOffice/Messages/SendMessage";
+import Message from "./pages/BackOffice/Messages/Message";
 
 function App() {
   return (
@@ -25,18 +28,26 @@ function App() {
         <Route path={"/"} element={<Home />} />
         <Route path="backOffice" element={<BackOffice />}>
           <Route index element={<HomeBO />} />
+          {/* ------------------------------------Events------------------------------------ */}
           <Route path="all-events" element={<Allevent />} />
           <Route path="create-event" element={<CreateEvent />} />
           <Route path="edit-event" element={<EditEvent />} />
+          {/* ------------------------------------Products------------------------------------ */}
           <Route path="all-products" element={<AllProducts />} />
           <Route path="create-product" element={<CreateProduct />} />
           <Route path="edit-product" element={<EditProduct />} />
+          {/* ------------------------------------Users------------------------------------ */}
           <Route path="all-users" element={<AllUsers />} />
           <Route path="create-user" element={<CreateUser />} />
           <Route path="edit-user" element={<EditUser />} />
+          {/* ------------------------------------Articles------------------------------------ */}
           <Route path="all-articles" element={<AllArticles />} />
           <Route path="create-article" element={<CreateArticle />} />
           <Route path="edit-article" element={<EditArticle />} />
+          {/* ------------------------------------Messages------------------------------------ */}
+          <Route path="all-messages" element={<AllMessages />} />
+          <Route path="send-message" element={<SendMessage />} />
+          <Route path="message" element={<Message />} />
         </Route>
       </Routes>
     </>
