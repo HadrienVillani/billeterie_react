@@ -1,75 +1,8 @@
 import React from "react";
 import NavItem from "./NavItem";
 import { NavLink } from "react-router-dom";
+import dataNavButtons from "../assets/data/navButtons";
 function NavBackOffice() {
-  const navButtons = [
-    {
-      title: "Les évènements",
-      subButtons: [
-        {
-          name: "Tout les évènements",
-          url: "all-events",
-        },
-        {
-          name: "Créer un évènement",
-          url: "create-event",
-        },
-      ],
-    },
-    {
-      title: "Les produits",
-      subButtons: [
-        {
-          name: "Tout les produits",
-          url: "all-products",
-        },
-        {
-          name: "Créer un produit",
-          url: "create-product",
-        },
-      ],
-    },
-    {
-      title: "Les Utilisateurs",
-      subButtons: [
-        {
-          name: "Tout les utilisateurs",
-          url: "all-users",
-        },
-        {
-          name: "Créer un utilisateur",
-          url: "create-user",
-        },
-      ],
-    },
-    {
-      title: "Les Articles",
-      subButtons: [
-        {
-          name: "Tout les articles",
-          url: "all-articles",
-        },
-        {
-          name: "Créer un article",
-          url: "create-article",
-        },
-      ],
-    },
-    {
-      title: "Messages",
-      subButtons: [
-        {
-          name: "Tout les messages",
-          url: "all-Messages",
-        },
-        {
-          name: "Envoyer un message",
-          url: "send-message",
-        },
-      ],
-    },
-  ];
-
   return (
     <>
       <nav
@@ -84,7 +17,7 @@ function NavBackOffice() {
               </button>
             </NavLink>
           </li>
-          {navButtons.map((button, key) => {
+          {dataNavButtons.navButtons.map((button, key) => {
             return <NavItem key={key} data={button} />;
           })}
         </ul>
