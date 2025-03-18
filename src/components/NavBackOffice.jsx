@@ -1,12 +1,12 @@
 import React from "react";
 import NavItem from "./NavItem";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import dataNavButtons from "../assets/data/navButtons";
 function NavBackOffice() {
   return (
     <>
       <nav
-        className="w-full flex flex-col justify-between border-r-2 border-white bg-neutral-500"
+        className="w-full flex flex-col justify-between border-r-2 border-white bg-neutral-500 h-full"
         style={{ width: "20%" }}
       >
         <ul className="flex flex-col">

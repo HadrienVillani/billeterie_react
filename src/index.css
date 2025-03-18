@@ -60,7 +60,6 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: light) {

@@ -4,8 +4,8 @@ import NavBackOffice from "../../components/NavBackOffice";
 function index() {
   return (
     <>
-      <div class="w-screen">
-        <div className="container" class="flex justify-between w-full">
+      <div class="w-screen h-full">
+        <div className="container h-full flex">
           <NavBackOffice />
           <Outlet />
         </div>
