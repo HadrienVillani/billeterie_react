@@ -1,30 +1,30 @@
 import "./App.css";
-import NavBar from "./components/navBar";
+import NavBar from "./components/organisms/NavBar";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/frontView/Home";
-import BackOffice from "./pages/BackOffice";
+import Home from "./components/pages/frontView/Home";
+import BackOffice from "./components/pages/backOffice";
 
-import CreateEvent from "./pages/BackOffice/Events/CreateEvent";
-import EditEvent from "./pages/BackOffice/Events/EditEvent";
-import Allevent from "./pages/BackOffice/Events/Allevent";
+import CreateEvent from "@pages/backOffice/Events/CreateEvent";
+import EditEvent from "@pages/backOffice/Events/EditEvent";
+import Allevent from "@pages/backOffice/Events/Allevent";
 
-import HomeBO from "./pages/BackOffice/HomeBO";
+import HomeBO from "@pages/backOffice/HomeBO";
 
-import AllProducts from "./pages/BackOffice/Products/AllProducts";
-import CreateProduct from "./pages/BackOffice/Products/CreateProduct";
-import EditProduct from "./pages/BackOffice/Products/EditProduct";
+import AllProducts from "@pages/backOffice/Products/AllProducts";
+import CreateProduct from "@pages/backOffice/Products/CreateProduct";
+import EditProduct from "@pages/backOffice/Products/EditProduct";
 
-import AllUsers from "./pages/BackOffice/Users/AllUsers";
-import CreateUser from "./pages/BackOffice/Users/CreateUser";
-import EditUser from "./pages/BackOffice/Users/EditUser";
+import AllUsers from "@pages/backOffice/Users/AllUsers";
+import CreateUser from "@pages/backOffice/Users/CreateUser";
+import EditUser from "@pages/backOffice/Users/EditUser";
 
-import EditArticle from "./pages/BackOffice/Articles/EditArticle";
-import CreateArticle from "./pages/BackOffice/Articles/CreateArticle";
-import AllArticles from "./pages/BackOffice/Articles/AllArticles";
+import EditArticle from "@pages/backOffice/Articles/EditArticle";
+import CreateArticle from "@pages/backOffice/Articles/CreateArticle";
+import AllArticles from "@pages/backOffice/Articles/AllArticles";
 
-import AllMessages from "./pages/BackOffice/Messages/AllMessages";
-import SendMessage from "./pages/BackOffice/Messages/SendMessage";
-import Message from "./pages/BackOffice/Messages/Message";
+import AllMessages from "@pages/backOffice/Messages/AllMessages";
+import SendMessage from "@pages/backOffice/Messages/SendMessage";
+import Message from "@pages/backOffice/Messages/Message";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import BackOfficeForm from "../../../components/BackOfficeForm";
-import dataForm from "../../../assets/data/dataForm";
+import BackOfficeForm from "../../../organisms/BackOfficeForm";
+import dataForm from "../../../../assets/data/dataForm";
 
 function SendMessage() {
   return (

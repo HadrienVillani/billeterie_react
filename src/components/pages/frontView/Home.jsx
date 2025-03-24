@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../assets/data/data";
+import data from "../../../assets/data/data";
 function Home() {
   return (
     <>

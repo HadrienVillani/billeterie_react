@@ -1,7 +1,7 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "@atoms/NavItem";
 import { Link, NavLink } from "react-router-dom";
-import dataNavButtons from "../assets/data/navButtons";
+import dataNavButtons from "@data/navButtons";
 function NavBackOffice() {
   return (
     <>

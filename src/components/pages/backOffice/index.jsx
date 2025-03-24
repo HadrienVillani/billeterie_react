@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavBackOffice from "../../components/NavBackOffice";
+import NavBackOffice from "@organisms/NavBackOffice";
 function index() {
   return (
     <>
       <div class="w-screen h-full">
-        <div className="container h-full flex">
+        <div className="h-full flex">
           <NavBackOffice />
           <Outlet />
         </div>
