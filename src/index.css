@@ -44,18 +44,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border: 1px solid transparent;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: 0.5s;
-  padding: 1em;
-}
-
 h2 {
   font-size: 2rem;
   font-weight: bold;

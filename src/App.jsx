@@ -6,7 +6,7 @@ import BackOffice from "./components/pages/backOffice";
 
 import CreateEvent from "@pages/backOffice/Events/CreateEvent";
 import EditEvent from "@pages/backOffice/Events/EditEvent";
-import Allevent from "@pages/backOffice/Events/Allevent";
+import AllEvents from "@/components/pages/backOffice/Events/AllEvents";
 
 import HomeBO from "@pages/backOffice/HomeBO";
 
@@ -27,6 +27,8 @@ import SendMessage from "@pages/backOffice/Messages/SendMessage";
 import Message from "@pages/backOffice/Messages/Message";
 import EventPage from "./components/pages/backOffice/Events/EventPage";
 import EventsPage from "./components/pages/frontView/EventsPage";
+import ProductsPage from "./components/pages/frontView/ProductsPage";
+import ContactPage from "./components/pages/frontView/ContactPage";
 
 function App() {
   return (
@@ -35,11 +37,13 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/nos-évènements"} element={<EventsPage />} />
-        <Route path="all-events/:eventPage" element={<EventPage />} />
+        <Route path="nos-évènements/:eventPage" element={<EventPage />} />
+        <Route path="/nos-produits" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="backOffice" element={<BackOffice />}>
           <Route index element={<HomeBO />} />
           {/* ------------------------------------Events------------------------------------ */}
-          <Route path="all-events" element={<Allevent />} />
+          <Route path="all-events" element={<AllEvents />} />
           <Route path="create-event" element={<CreateEvent />} />
           <Route path="edit-event" element={<EditEvent />} />
           <Route path="all-events/:eventPage" element={<EventPage />} />

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../atoms/Button";
 
 function SearchSection() {
   return (
@@ -7,7 +8,7 @@ function SearchSection() {
         <h2>Trouve le prochain évènement dans ta ville</h2>
         <form action="">
           <input type="text" />
-          <button>Chercher</button>
+          <Button title="Chercher" />
         </form>
       </div>
     </div>
