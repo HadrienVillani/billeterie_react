@@ -25,6 +25,8 @@ import AllArticles from "@pages/backOffice/Articles/AllArticles";
 import AllMessages from "@pages/backOffice/Messages/AllMessages";
 import SendMessage from "@pages/backOffice/Messages/SendMessage";
 import Message from "@pages/backOffice/Messages/Message";
+import EventPage from "./components/pages/backOffice/Events/EventPage";
+import EventsPage from "./components/pages/frontView/EventsPage";
 
 function App() {
   return (
@@ -32,12 +34,15 @@ function App() {
       <NavBar />
       <Routes>
         <Route path={"/"} element={<Home />} />
+        <Route path={"/nos-évènements"} element={<EventsPage />} />
+        <Route path="all-events/:eventPage" element={<EventPage />} />
         <Route path="backOffice" element={<BackOffice />}>
           <Route index element={<HomeBO />} />
           {/* ------------------------------------Events------------------------------------ */}
           <Route path="all-events" element={<Allevent />} />
           <Route path="create-event" element={<CreateEvent />} />
           <Route path="edit-event" element={<EditEvent />} />
+          <Route path="all-events/:eventPage" element={<EventPage />} />
           {/* ------------------------------------Products------------------------------------ */}
           <Route path="all-products" element={<AllProducts />} />
           <Route path="create-product" element={<CreateProduct />} />
