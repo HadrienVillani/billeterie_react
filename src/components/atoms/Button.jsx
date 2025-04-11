@@ -1,9 +1,11 @@
 import React from "react";
 
-function Button({ title }) {
+function Button(props) {
   return (
-    <button className="bg-amber-600 px-10 py-2 rounded-md hover:bg-amber-500 cursor-pointer uppercase font-bold">
-      {title}
+    <button
+      className={`border-3 border-amber-600 bg-amber-600 px-10 py-3 rounded-md hover:bg-transparent duration-500 cursor-pointer uppercase font-bold ${props.style}`}
+    >
+      {props.title}
     </button>
   );
 }

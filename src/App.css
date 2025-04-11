@@ -18,15 +18,6 @@ section {
   flex-direction: column;
 }
 
-input,
-textarea {
-  border: 2px solid white;
-  padding: 1em;
-}
-
-input {
-  height: 6vh;
-}
 
 .logo {
   height: 6em;
