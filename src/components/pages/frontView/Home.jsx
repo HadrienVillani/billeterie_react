@@ -6,12 +6,12 @@ import productsData from "@/assets/data/productsData";
 
 function Home() {
   return (
-    <>
+    <div className="w-full">
       <SearchSection />
       <FourElemsComp data={events} title="Nos prochains évènements" />
       <FourElemsComp data={articles} title="Nos meilleurs Articles" />
       <FourElemsComp data={productsData} title="Nos meilleurs Produits" />
-    </>
+    </div>
   );
 }
 

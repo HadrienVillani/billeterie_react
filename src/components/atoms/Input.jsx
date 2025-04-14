@@ -5,6 +5,7 @@ function Input(props) {
     <>
       {props.title && <label htmlFor="">{props.title}</label>}
       <input
+        placeholder={props.placeholder}
         className={`rounded-md px-3 py-3 outline-none border-3 border-amber-600 ${props.style}`}
       />
     </>
